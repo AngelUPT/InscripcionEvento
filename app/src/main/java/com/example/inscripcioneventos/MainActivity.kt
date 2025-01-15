@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
@@ -39,6 +40,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column {
+        Text("Inscripcion a un evento", style = MaterialTheme.typography.titleLarge, modifier = Modifier.align(Alignment.CenterHorizontally))
         Text(text = "Nombre")
         OutlinedTextField(value="", onValueChange = {})
         Text(text = "Email")
